@@ -18,10 +18,10 @@ describe 'the Friday test :)' do
     expect(n).to eq ['omar', 'idris', 'angela']
   end
 
-  # specify 'remove_nils_from_array' do
-  #   n = remove_nils_from_array ['a', 'b', nil, nil, false, 'c', nil]
-  #   expect(n).to eq ['a', 'b', false, 'c']
-  # end
+  specify 'remove_nils_from_array' do
+    n = remove_nils_from_array ['a', 'b', nil, nil, false, 'c', nil]
+    expect(n).to eq ['a', 'b', false, 'c']
+  end
 
   # specify 'remove_nils_and_false_from_array' do
   #   n = remove_nils_and_false_from_array ['a', 'b', nil, nil, false, 'c', nil]
