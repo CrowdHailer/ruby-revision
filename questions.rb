@@ -99,3 +99,7 @@ def convert_array_to_a_hash array
   end
   hash
 end
+
+def get_all_letters_in_array_of_words array
+  array.map(&:chars).map(&:to_a).flatten.uniq.sort
+end
