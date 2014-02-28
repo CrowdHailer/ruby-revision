@@ -46,3 +46,13 @@ end
 def separate_array_into_even_and_odd_numbers array
   array.partition(&:even?)
 end
+
+
+class String
+  def palindrome?
+    self == reverse
+  end
+end
+def number_of_elements_that_are_palindromes array
+  array.select(&:palindrome?).length
+end
