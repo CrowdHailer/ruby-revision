@@ -121,3 +121,11 @@ end
 def remove_capital_letters_from_string string
   string.gsub(/[A-Z]/, '')
 end
+
+def round_up_number number
+  number.ceil
+end
+
+def round_down_number number
+  number.floor
+end
