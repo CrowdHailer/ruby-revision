@@ -129,3 +129,7 @@ end
 def round_down_number number
   number.floor
 end
+
+def format_date_nicely date
+  date.strftime("%d/%m/%Y")
+end
