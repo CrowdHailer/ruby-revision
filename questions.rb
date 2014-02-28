@@ -111,3 +111,9 @@ def swap_keys_and_values_in_a_hash hash
   end
   output
 end
+
+def add_together_keys_and_values hash
+  hash.inject(0) do |total, pair|
+    total += pair.reduce(&:+)
+  end
+end
