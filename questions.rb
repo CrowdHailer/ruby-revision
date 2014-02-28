@@ -77,3 +77,8 @@ end
 def turn_symbol_into_string symbol
   symbol.to_s
 end
+
+def average_of_array array
+  float = total_of_array(array)/array.length.to_f
+  float.round(0)
+end
