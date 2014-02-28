@@ -29,3 +29,7 @@ end
 def add_element_to_beginning_of_array array, element
   array.unshift(element)
 end
+
+def array_sort_by_last_letter_of_word array
+  array.sort_by { |word| word[-1] }
+end
