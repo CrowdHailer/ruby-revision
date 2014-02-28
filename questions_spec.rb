@@ -23,10 +23,10 @@ describe 'the Friday test :)' do
     expect(n).to eq ['a', 'b', false, 'c']
   end
 
-  # specify 'remove_nils_and_false_from_array' do
-  #   n = remove_nils_and_false_from_array ['a', 'b', nil, nil, false, 'c', nil]
-  #   expect(n).to eq ['a', 'b', 'c']
-  # end
+  specify 'remove_nils_and_false_from_array' do
+    n = remove_nils_and_false_from_array ['a', 'b', nil, nil, false, 'c', nil]
+    expect(n).to eq ['a', 'b', 'c']
+  end
 
   # specify 'reverse_every_element_in_array' do
   #   n = reverse_every_element_in_array ['dog', 'monkey', 'elephant']

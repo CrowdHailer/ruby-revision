@@ -9,3 +9,7 @@ end
 def remove_nils_from_array array
   array.compact
 end
+
+def remove_nils_and_false_from_array array
+  array.reject { |e| !e }
+end
