@@ -103,3 +103,11 @@ end
 def get_all_letters_in_array_of_words array
   array.map(&:chars).map(&:to_a).flatten.uniq.sort
 end
+
+def swap_keys_and_values_in_a_hash hash
+  output = {}
+  hash.each do |k, v|
+    output[v] = k
+  end
+  output
+end
