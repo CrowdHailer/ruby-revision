@@ -91,3 +91,11 @@ def get_elements_until_greater_than_five array
   end
   output
 end
+
+def convert_array_to_a_hash array
+  hash = {}
+  array.each_slice(2) do |variable|
+    hash[variable[0]] = variable[1]
+  end
+  hash
+end
