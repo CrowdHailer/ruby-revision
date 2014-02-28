@@ -42,3 +42,7 @@ end
 def make_numbers_negative n
   n > 0 ? -n : n
 end
+
+def separate_array_into_even_and_odd_numbers array
+  array.partition(&:even?)
+end
