@@ -86,10 +86,10 @@ describe 'the Friday test :)' do
     expect(n).to eq 'a'
   end
 
-  # specify 'longest_word_in_array' do
-  #   n = longest_word_in_array %w(here is a bunch of words of different lengths)
-  #   expect(n).to eq 'different'
-  # end
+  specify 'longest_word_in_array' do
+    n = longest_word_in_array %w(here is a bunch of words of different lengths)
+    expect(n).to eq 'different'
+  end
 
   # specify 'total_of_array' do
   #   n = total_of_array [1, 3, 5, 6, 2, 8]

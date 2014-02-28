@@ -61,3 +61,7 @@ end
 def shortest_word_in_array array
   array.sort_by(&:length).first
 end
+
+def longest_word_in_array array
+  array.sort_by(&:length).last
+end
