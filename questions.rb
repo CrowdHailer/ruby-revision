@@ -13,3 +13,11 @@ end
 def remove_nils_and_false_from_array array
   array.reject { |e| !e }
 end
+
+def reverse_every_element_in_array array
+  array.map { |item| item.reverse }
+end
+
+def every_possible_pairing_of_students array
+  array.combination(2).to_a
+end
