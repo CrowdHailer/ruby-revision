@@ -146,3 +146,7 @@ def titleize_a_string string
   words[0].capitalize!
   words.join(" ")
 end
+
+def check_a_string_for_special_characters string
+  (/^[\w\d]+$/ !~ string)
+end

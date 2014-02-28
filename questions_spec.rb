@@ -166,13 +166,13 @@ describe 'the Friday test :)' do
     expect(n).to eq 'The Lion the Witch and the Wardrobe'
   end
 
-  # specify 'check_a_string_for_special_characters' do
-  #   a = check_a_string_for_special_characters 'ABCdef123'
-  #   b = check_a_string_for_special_characters 'ABC@def123!'
+  specify 'check_a_string_for_special_characters' do
+    a = check_a_string_for_special_characters 'ABCdef123'
+    b = check_a_string_for_special_characters 'ABC@def123!'
 
-  #   expect(a).to be_false
-  #   expect(b).to be_true
-  # end
+    expect(a).to be_false
+    expect(b).to be_true
+  end
 
   # specify 'get_upper_limit_of' do
   #   n = get_upper_limit_of 1..20
