@@ -33,3 +33,12 @@ end
 def array_sort_by_last_letter_of_word array
   array.sort_by { |word| word[-1] }
 end
+
+def get_first_half_of_string string
+  last = (string.length+1)/2
+  string[0...last]
+end
+
+def make_numbers_negative n
+  n > 0 ? -n : n
+end
