@@ -25,3 +25,7 @@ end
 def all_elements_except_first_3 array
   array[3..-1]
 end
+
+def add_element_to_beginning_of_array array, element
+  array.unshift(element)
+end
