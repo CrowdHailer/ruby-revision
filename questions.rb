@@ -53,6 +53,11 @@ class String
     self == reverse
   end
 end
+
 def number_of_elements_that_are_palindromes array
   array.select(&:palindrome?).length
+end
+
+def shortest_word_in_array array
+  array.sort_by(&:length).first
 end
