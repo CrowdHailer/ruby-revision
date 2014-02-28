@@ -133,3 +133,16 @@ end
 def format_date_nicely date
   date.strftime("%d/%m/%Y")
 end
+
+def get_domain_name_from_email_address string
+  string.match(/@(.+)\./)[1]
+end
+
+def titleize_a_string string
+  conjunctions = ['a','and','the']
+  words = string.split.map do |word|
+    (conjunctions.include? word) ? word : word.capitalize
+  end
+  words[0].capitalize!
+  words.join(" ")
+end
