@@ -117,3 +117,7 @@ def add_together_keys_and_values hash
     total += pair.reduce(&:+)
   end
 end
+
+def remove_capital_letters_from_string string
+  string.gsub(/[A-Z]/, '')
+end
