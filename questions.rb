@@ -150,3 +150,15 @@ end
 def check_a_string_for_special_characters string
   (/^[\w\d]+$/ !~ string)
 end
+
+def get_upper_limit_of range
+  range.max
+end
+
+def is_a_3_dot_range? range
+  range.inspect.match(/\d\.{3}\d/)
+end
+
+def square_root_of number
+  number ** 0.5
+end
