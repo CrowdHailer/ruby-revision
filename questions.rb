@@ -162,3 +162,9 @@ end
 def square_root_of number
   number ** 0.5
 end
+
+def word_count_a_file file_string
+  string = IO.read(file_string)
+  words = string.split
+  words.count
+end
