@@ -192,3 +192,10 @@ def your_birthday_is_on_a_friday_in_the_year birthday
   return y if birthday.friday?
   your_birthday_is_on_a_friday_in_the_year Time.new(y+1, m, d)
 end
+
+def count_words_of_each_length_in_a_file file_string
+  words = IO.read(file_string).scan(/\w+/)
+  totals = Hash.new(0)
+  words.each { |word| totals[word.length] += 1 }
+  totals
+end
