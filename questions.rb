@@ -168,3 +168,7 @@ def word_count_a_file file_string
   words = string.split
   words.count
 end
+
+def call_method_from_string method
+  send(method)
+end
