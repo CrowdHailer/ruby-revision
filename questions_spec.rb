@@ -211,10 +211,10 @@ describe 'the Friday test :)' do
     expect(b).to be_false
   end
 
-  # specify 'your_birthday_is_on_a_friday_in_the_year' do
-  #   n = your_birthday_is_on_a_friday_in_the_year(Time.new(2013, 1, 1))
-  #   expect(n).to eq 2016
-  # end
+  specify 'your_birthday_is_on_a_friday_in_the_year' do
+    n = your_birthday_is_on_a_friday_in_the_year(Time.new(2013, 1, 1))
+    expect(n).to eq 2016
+  end
 
   # specify 'count_words_of_each_length_in_a_file' do
   #   n = count_words_of_each_length_in_a_file('lorem.txt') || []

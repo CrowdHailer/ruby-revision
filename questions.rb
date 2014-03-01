@@ -186,3 +186,9 @@ def is_a_2014_bank_holiday? date
   bank_hols.map! { |date| Time.new(2014, date[:m], date[:d]) }
   bank_hols.include? date
 end
+
+def your_birthday_is_on_a_friday_in_the_year birthday
+  y, m, d = birthday.year, birthday.month, birthday.day
+  return y if birthday.friday?
+  your_birthday_is_on_a_friday_in_the_year Time.new(y+1, m, d)
+end
