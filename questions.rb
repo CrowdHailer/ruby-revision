@@ -172,3 +172,17 @@ end
 def call_method_from_string method
   send(method)
 end
+
+def is_a_2014_bank_holiday? date
+  bank_hols = [ {d:1, m:1},
+                {d:18, m:4},
+                {d:21, m:4},
+                {d:5, m:5},
+                {d:26, m:5},
+                {d:25, m:8},
+                {d:25, m:12},
+                {d:26, m:12}
+              ]
+  bank_hols.map! { |date| Time.new(2014, date[:m], date[:d]) }
+  bank_hols.include? date
+end
